@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>Log In</title>
+    <style>
+	
+    h2{
+        text-align: center;
+    }
+    .login{
+        color: white;
+        width: 300px;
+        padding: 10px;
+        position: absolute;
+        font-size: 20px;
+        top: 10%;
+        right: 50px; 
+        line-height: 50px;
+        border-radius: 20px;
+        background: transparent;
+        text-align: left;
+        vertical-align: middle;
+		border-style: solid;
+		
+
+
+    }
+	
+    input{
+        height: 30px;
+        width: 98%;
+        padding-left: 10px;
+        border-radius: 8px;
+		box-shadow:0 0 0 1px green;
+
+    }
+    button{
+        margin-top: 10px;
+        width:120px;
+        height: 50px;
+        padding: 5px;
+        float: right;
+        vertical-align: middle;
+        font-size: 25px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        background-color: rgb(67, 185, 67);
+        color: white;
+    }
+    #myVideo{
+        position: fixed;
+        width: auto;
+        height: auto;
+    }
+    a{
+        color: white;
+        font-size: 14px;
+    }
+    
+  input[type=text]:focus {
+  background-color: #4682B4;
+}
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="login">
+        <h2>Log In</h2>
+        <form action="Home.html">
+            <label for="u_name">Username: </label><br>
+            <input type="text" name="u_name" placeholder="Enter username" required><br>
+
+            <label for="u_pswd">Contact Number: </label><br>
+            <input type="text" name="u_pswd" placeholder="Contact Number:" minlength="8" required>
+			
+			<label for="u_pswd">Email: </label><br>
+            <input type="text" name="u_pswd" placeholder="Enter Email" required>
+            <!-- <a href="Sign Up.html">No Account? | Sign Up</p> -->
+            <button>Submit</button>
+			&nbsp; &nbsp; 
+			<button>Reset</button>
+        </form>
+    </div>
+</body>
+</html>
